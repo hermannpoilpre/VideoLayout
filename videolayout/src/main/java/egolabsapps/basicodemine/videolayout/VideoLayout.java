@@ -272,7 +272,7 @@ public class VideoLayout extends FrameLayout implements TextureView.SurfaceTextu
     public void setPathOrUrl(String FILE_NAME) {
         this.FILE_NAME = FILE_NAME;
 
-        isUrl = FILE_NAME.contains("http://") || FILE_NAME.contains("https://");
+        isUrl = FILE_NAME.contains("http://") || FILE_NAME.contains("https://") || FILE_NAME.contains("file:///");
 
         if (videoSurface == null) {
             initViews();
